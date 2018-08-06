@@ -2,14 +2,313 @@
 title: Le Wagon - Middleman
 ---
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://source.unsplash.com/random');">
+  <div class="banner-content">
+    <h1>Welcome Home</h1>
+    <p>Book unique homes and experience a city like a local</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-lg-3">
+          <form action="">
+            <div class="form-group">
+              <input type="location" id="your-location" placeholder="Where?" class="form-control form-control-lg">
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-lg-3">
+          <form action="">
+            <div class="form-group">
+              <input type="holiday-time" id="your-holiday-time" placeholder="When?" class="form-control form-control-lg">
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-lg-3">
+          <form action="">
+            <div class="form-group">
+              <select class="form-control form-control-lg" id="how-do-you-know-us?">
+                <option value="1-guest">1 guest</option>
+                <option value="2-guests">2 guests</option>
+                <option value="3-guests">3 guests</option>
+                <option value="4-or-more-guests">4 or more guests</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-sm-offset-4 col-lg-3 col-lg-offset-0">
+          <a class="btn btn-primary btn-block">Search</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Recent flats</h2>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/germany');">
+        <div class="card-category">Berlin, Germany</div>
+        <div class="card-description">
+          <h2>Sebastien's home</h2>
+          <p>Lovely apartment in the centre of town</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/ssaunier">
+        <a class="card-link" href="#" ></a>
+      </div>    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/rio');">
+        <div class="card-category">Rio, Brazil</div>
+        <div class="card-description">
+          <h2>Ethan's apartment</h2>
+          <p>Fantastic views of the city</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <a class="card-link" href="#" ></a>
+      </div>    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/london');">
+        <div class="card-category">London, UK</div>
+        <div class="card-description">
+          <h2>Boris' townhouse</h2>
+          <p>Luxurious living in London</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/papillard">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+        <div class="card-category">Shanghai, China</div>
+        <div class="card-description">
+          <h2>Ed's bungalow</h2>
+          <p>A unique location</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/edward">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+        <div class="card-category">Paris, France</div>
+        <div class="card-description">
+          <h2>Vivien's house</h2>
+          <p>Stunning canalside neighbourhood</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/vivien">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/germany');">
+        <div class="card-category">Berlin, Germany</div>
+        <div class="card-description">
+          <h2>Sebastien's home</h2>
+          <p>Lovely apartment in the centre of town</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/ssaunier">
+        <a class="card-link" href="#" ></a>
+      </div>    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/rio');">
+        <div class="card-category">Rio, Brazil</div>
+        <div class="card-description">
+          <h2>Ethan's apartment</h2>
+          <p>Fantastic views of the city</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <a class="card-link" href="#" ></a>
+      </div>    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/london');">
+        <div class="card-category">London, UK</div>
+        <div class="card-description">
+          <h2>Boris' townhouse</h2>
+          <p>Luxurious living in London</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/papillard">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+        <div class="card-category">Shanghai, China</div>
+        <div class="card-description">
+          <h2>Ed's bungalow</h2>
+          <p>A unique location</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/edward">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+        <div class="card-category">Paris, France</div>
+        <div class="card-description">
+          <h2>Vivien's house</h2>
+          <p>Stunning canalside neighbourhood</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/vivien">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/germany');">
+        <div class="card-category">Berlin, Germany</div>
+        <div class="card-description">
+          <h2>Sebastien's home</h2>
+          <p>Lovely apartment in the centre of town</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/ssaunier">
+        <a class="card-link" href="#" ></a>
+      </div>    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/rio');">
+        <div class="card-category">Rio, Brazil</div>
+        <div class="card-description">
+          <h2>Ethan's apartment</h2>
+          <p>Fantastic views of the city</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <a class="card-link" href="#" ></a>
+      </div>    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/london');">
+        <div class="card-category">London, UK</div>
+        <div class="card-description">
+          <h2>Boris' townhouse</h2>
+          <p>Luxurious living in London</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/papillard">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+        <div class="card-category">Shanghai, China</div>
+        <div class="card-description">
+          <h2>Ed's bungalow</h2>
+          <p>A unique location</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/edward">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+        <div class="card-category">Paris, France</div>
+        <div class="card-description">
+          <h2>Vivien's house</h2>
+          <p>Stunning canalside neighbourhood</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/vivien">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/germany');">
+        <div class="card-category">Berlin, Germany</div>
+        <div class="card-description">
+          <h2>Sebastien's home</h2>
+          <p>Lovely apartment in the centre of town</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/ssaunier">
+        <a class="card-link" href="#" ></a>
+      </div>    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/rio');">
+        <div class="card-category">Rio, Brazil</div>
+        <div class="card-description">
+          <h2>Ethan's apartment</h2>
+          <p>Fantastic views of the city</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <a class="card-link" href="#" ></a>
+      </div>    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/london');">
+        <div class="card-category">London, UK</div>
+        <div class="card-description">
+          <h2>Boris' townhouse</h2>
+          <p>Luxurious living in London</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/papillard">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+        <div class="card-category">Shanghai, China</div>
+        <div class="card-description">
+          <h2>Ed's bungalow</h2>
+          <p>A unique location</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/edward">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+        <div class="card-category">Paris, France</div>
+        <div class="card-description">
+          <h2>Vivien's house</h2>
+          <p>Stunning canalside neighbourhood</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/vivien">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/germany');">
+        <div class="card-category">Berlin, Germany</div>
+        <div class="card-description">
+          <h2>Sebastien's home</h2>
+          <p>Lovely apartment in the centre of town</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/ssaunier">
+        <a class="card-link" href="#" ></a>
+      </div>    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/rio');">
+        <div class="card-category">Rio, Brazil</div>
+        <div class="card-description">
+          <h2>Ethan's apartment</h2>
+          <p>Fantastic views of the city</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <a class="card-link" href="#" ></a>
+      </div>    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/london');">
+        <div class="card-category">London, UK</div>
+        <div class="card-description">
+          <h2>Boris' townhouse</h2>
+          <p>Luxurious living in London</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/papillard">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+        <div class="card-category">Shanghai, China</div>
+        <div class="card-description">
+          <h2>Ed's bungalow</h2>
+          <p>A unique location</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/edward">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-lg-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/paris');">
+        <div class="card-category">Paris, France</div>
+        <div class="card-description">
+          <h2>Vivien's house</h2>
+          <p>Stunning canalside neighbourhood</p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/vivien">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
   </div>
 </div>
